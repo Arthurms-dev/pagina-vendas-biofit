@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Obrigado pela compra! 🎉 | BioFit</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #c4ff00;
+  --primary-dark: #9fcc00;
+  --bg: #0a0a0a;
+  --bg-card: #161616;
+  --border: #2a2a2a;
+  --text: #ffffff;
+  --text-muted: #a0a0a0;
+  --whatsapp: #25d366;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-image: 
+    radial-gradient(ellipse at top, rgba(196, 255, 0, 0.1) 0%, transparent 50%);
+}
+
+.container { max-width: 560px; width: 100%; text-align: center; }
+
+.logo { margin-bottom: 32px; }
+.logo-img { height: 44px; }
+
+.success-icon {
+  font-size: 80px;
+  margin-bottom: 16px;
+  animation: bounce 0.8s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-15px) scale(1.05); }
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+h1 span { color: var(--primary); }
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 16px;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.next-step-card {
+  background: var(--bg-card);
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+  padding: 32px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 0 40px rgba(196, 255, 0, 0.2);
+}
+
+.next-step-number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  color: #000;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.next-step-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.next-step-desc {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.btn-briefing {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 32px;
+  background: var(--primary);
+  color: #000;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(196, 255, 0, 0.3);
+  transition: all 0.3s ease;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-briefing:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.timeline {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.timeline h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-item:last-child { border-bottom: none; }
+
+.timeline-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: rgba(196, 255, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.timeline-text { font-size: 14px; line-height: 1.4; }
+.timeline-text strong { display: block; margin-bottom: 2px; }
+.timeline-text span { color: var(--text-muted); font-size: 12px; }
+
+.support-card {
+  padding: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.support-card a {
+  color: var(--whatsapp);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 32px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <a href="https://biofit.com.br" class="logo">
+    <img src="../pagina-vendas/assets/logo-biofit.png" alt="BioFit" class="logo-img">
+  </a>
+  
+  <div class="success-icon">🎉</div>
+  
+  <h1>PARABÉNS, <span>PROJETO CONFIRMADO!</span></h1>
+  <p class="subtitle">Recebi seu pagamento. Agora é hora de começar a criar seu site incrível!</p>
+  
+  <div class="next-step-card">
+    <div class="next-step-number">1</div>
+    <h2 class="next-step-title">Preencha o Briefing</h2>
+    <p class="next-step-desc">
+      Esse formulário me ajuda a entender seu negócio, 
+      público e estilo. Leva em média <strong>10-15 minutos</strong>.
+    </p>
+    <a href="https://briefing.biofit.com.br" class="btn-briefing">
+      📋 Preencher Briefing Agora
+    </a>
+    <p style="font-size: 12px; color: var(--text-muted); margin-top: 12px;">
+      💡 Pode salvar e voltar depois se precisar
+    </p>
+  </div>
+  
+  <div class="timeline">
+    <h3>📅 O que acontece agora?</h3>
+    
+    <div class="timeline-item">
+      <div class="timeline-icon">📋</div>
+      <div class="timeline-text">
+        <strong>Você preenche o briefing</strong>
+        <span>10-15 minutos</span>
+      </div>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-icon">📞</div>
+      <div class="timeline-text">
+        <strong>Eu te chamo no WhatsApp</strong>
+        <span>Em até 24h para alinhar detalhes</span>
+      </div>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-icon">🎨</div>
+      <div class="timeline-text">
+        <strong>Crio seu site</strong>
+        <span>5-10 dias úteis</span>
+      </div>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-icon">✅</div>
+      <div class="timeline-text">
+        <strong>Você aprova e eu publico</strong>
+        <span>Site no ar!</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="support-card">
+    💬 Dúvidas? Fala comigo no <a href="https://wa.me/5581999944106">WhatsApp</a>
+  </div>
+  
+  <footer>
+    © 2026 BioFit — Aplicações web que convertem 💚
+  </footer>
+</div>
+
+</body>
+</html>

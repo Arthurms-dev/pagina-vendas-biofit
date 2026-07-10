@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Briefing BioFit — Vamos começar seu site!</title>
+<meta name="description" content="Preencha este formulário para iniciarmos a criação do seu site.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+<header class="briefing-header">
+  <div class="container">
+    <a href="https://biofit.com.br" class="logo-link">
+      <img src="../pagina-vendas/assets/logo-biofit.png" alt="BioFit" class="logo-img">
+    </a>
+    <div class="progress-indicator">
+      <span class="progress-text"><span id="progressPercent">0%</span> concluído</span>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="briefing-main">
+  <div class="container">
+    <div class="intro-card">
+      <h1 class="briefing-title">VAMOS COMEÇAR SEU <span>PROJETO</span></h1>
+      <p class="briefing-subtitle">
+        Preencha as informações abaixo para eu criar seu site. 
+        Leva em média <strong>10-15 minutos</strong>. 
+        Pode salvar e voltar depois, se precisar.
+      </p>
+      <div class="intro-tips">
+        <div class="tip">💡 Tenha suas fotos em mãos</div>
+        <div class="tip">📱 Use pelo celular se preferir</div>
+        <div class="tip">🔒 Seus dados estão seguros comigo</div>
+      </div>
+    </div>
+
+    <form id="briefingForm" class="briefing-form">
+
+      <section class="form-section" data-section="1">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title">Dados básicos</h2>
+          <p class="section-desc">Quem é você e como quer ser apresentado</p>
+        </div>
+
+        <div class="form-group">
+          <label for="nomeCompleto">Nome completo <span class="required">*</span></label>
+          <input type="text" id="nomeCompleto" name="nomeCompleto" required placeholder="Ex: Rafael Ferreira da Silva">
+        </div>
+
+        <div class="form-group">
+          <label for="nomeExibicao">Como quer ser chamado no site? <span class="required">*</span></label>
+          <input type="text" id="nomeExibicao" name="nomeExibicao" required placeholder="Ex: Rafael Ferreira">
+          <small>Como vai aparecer no topo do site (ex: "RAFAEL FERREIRA")</small>
+        </div>
+
+        <div class="form-group">
+          <label for="cref">CREF (Registro profissional) <span class="required">*</span></label>
+          <input type="text" id="cref" name="cref" required placeholder="Ex: 123456-G/SP">
+          <small>Se ainda não tem, escreva "Em processo"</small>
+        </div>
+
+        <div class="form-group">
+          <label for="cidade">Cidade e estado onde atende <span class="required">*</span></label>
+          <input type="text" id="cidade" name="cidade" required placeholder="Ex: São Paulo - SP">
+        </div>
+
+        <div class="form-group">
+          <label for="tempoAtuacao">Há quanto tempo atua como personal? <span class="required">*</span></label>
+          <select id="tempoAtuacao" name="tempoAtuacao" required>
+            <option value="">Selecione...</option>
+            <option value="menos-1">Menos de 1 ano</option>
+            <option value="1-3">De 1 a 3 anos</option>
+            <option value="3-5">De 3 a 5 anos</option>
+            <option value="5-10">De 5 a 10 anos</option>
+            <option value="mais-10">Mais de 10 anos</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="form-section" data-section="2">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Especialidades</h2>
+          <p class="section-desc">O que você trabalha e para quem</p>
+        </div>
+
+        <div class="form-group">
+          <label>Quais são suas principais especialidades? <span class="required">*</span></label>
+          <small>Escolha até 3</small>
+          <div class="checkbox-grid" id="especialidadesGrid">
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="emagrecimento">
+              <span class="checkbox-content">🔥 Emagrecimento</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="hipertrofia">
+              <span class="checkbox-content">💪 Hipertrofia</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="funcional">
+              <span class="checkbox-content">⚡ Funcional</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="cross">
+              <span class="checkbox-content">🏋️ Cross Training</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="gluteo">
+              <span class="checkbox-content">🍑 Glúteo</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="pos-parto">
+              <span class="checkbox-content">🤱 Pós-parto</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="third-age">
+              <span class="checkbox-content">👴 Terceira idade</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="reabilitacao">
+              <span class="checkbox-content">🏥 Reabilitação</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="condicionamento">
+              <span class="checkbox-content">❤️ Condicionamento</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="performance">
+              <span class="checkbox-content">🎯 Performance</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="lutador">
+              <span class="checkbox-content">🥊 Lutas / Boxe</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="especialidades" value="corrida">
+              <span class="checkbox-content">🏃 Corrida</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="fraseImpacto">Frase de impacto (opcional)</label>
+          <input type="text" id="fraseImpacto" name="fraseImpacto" placeholder="Ex: Emagrecer de vez é possível">
+          <small>Frase curta que aparece logo abaixo do seu nome (eu posso ajudar a criar)</small>
+        </div>
+
+        <div class="form-group">
+          <label for="publicoAlvo">Quem é seu aluno ideal? <span class="required">*</span></label>
+          <textarea id="publicoAlvo" name="publicoAlvo" required rows="3" placeholder="Ex: Mulheres de 25-40 anos que querem emagrecer de forma saudável e ter mais disposição"></textarea>
+        </div>
+      </section>
+
+      <section class="form-section" data-section="3">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title">Seus contatos</h2>
+          <p class="section-desc">Como os alunos vão te encontrar</p>
+        </div>
+
+        <div class="form-group">
+          <label for="whatsapp">WhatsApp <span class="required">*</span></label>
+          <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 99999-9999">
+          <small>Este será o botão principal do site</small>
+        </div>
+
+        <div class="form-group">
+          <label for="instagram">Instagram</label>
+          <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/seuuser">
+        </div>
+
+        <div class="form-group">
+          <label for="tiktok">TikTok</label>
+          <input type="url" id="tiktok" name="tiktok" placeholder="https://tiktok.com/@seuuser">
+        </div>
+
+        <div class="form-group">
+          <label for="youtube">YouTube (opcional)</label>
+          <input type="url" id="youtube" name="youtube" placeholder="https://youtube.com/@seucanal">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+        </div>
+
+        <div class="form-group">
+          <label for="localizacao">Academia / Local de atendimento</label>
+          <input type="text" id="localizacao" name="localizacao" placeholder="Ex: Academia Forma Fit - Vila Mariana">
+        </div>
+      </section>
+
+      <section class="form-section" data-section="4">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title">Seus serviços</h2>
+          <p class="section-desc">Como você atende e o que oferece</p>
+        </div>
+
+        <div class="form-group">
+          <label>Modalidade de atendimento <span class="required">*</span></label>
+          <div class="checkbox-grid checkbox-grid-2">
+            <label class="checkbox-card">
+              <input type="checkbox" name="modalidade" value="presencial">
+              <span class="checkbox-content">🏢 Presencial</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="modalidade" value="online">
+              <span class="checkbox-content">💻 Online</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="modalidade" value="domiciliar">
+              <span class="checkbox-content">🏠 Em domicílio</span>
+            </label>
+            <label class="checkbox-card">
+              <input type="checkbox" name="modalidade" value="parque">
+              <span class="checkbox-content">🌳 Ao ar livre</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Planos / Pacotes que oferece</label>
+          <small>Liste até 3 planos (ex: "Mensal - R$ 400")</small>
+          <div class="plan-inputs">
+            <input type="text" name="plano1" placeholder="Plano 1 - Ex: Mensal R$ 400">
+            <input type="text" name="plano2" placeholder="Plano 2 - Ex: Trimestral R$ 1.100">
+            <input type="text" name="plano3" placeholder="Plano 3 - Ex: Consultoria online R$ 250/mês">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="diferenciais">Seus diferenciais (opcional)</label>
+          <textarea id="diferenciais" name="diferenciais" rows="3" placeholder="Ex: Acompanhamento nutricional incluso, grupo de WhatsApp exclusivo, avaliação postural gratuita..."></textarea>
+        </div>
+      </section>
+
+      <section class="form-section" data-section="5">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2 class="section-title">Fotos e materiais</h2>
+          <p class="section-desc">Conteúdo visual do site</p>
+        </div>
+
+        <div class="form-group">
+          <label>Você tem fotos profissionais? <span class="required">*</span></label>
+          <div class="radio-group">
+            <label class="radio-card">
+              <input type="radio" name="temFotos" value="sim-muitas" required>
+              <span>Sim, tenho muitas (3+)</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="temFotos" value="sim-poucas">
+              <span>Sim, mas tenho poucas (1-2)</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="temFotos" value="celular">
+              <span>Tenho só de celular</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="temFotos" value="nao">
+              <span>Não tenho / quero usar banco de imagens</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="linkFotos">Link para suas fotos</label>
+          <textarea id="linkFotos" name="linkFotos" rows="3" placeholder="Cole aqui o link do Google Drive, Dropbox ou WeTransfer com suas fotos.&#10;&#10;Ex: https://drive.google.com/drive/folders/xxxxx"></textarea>
+          <small>📌 Se ainda não tem, faça upload no Google Drive e compartilhe como "qualquer pessoa com o link pode ver"</small>
+        </div>
+
+        <div class="form-group">
+          <label for="corPreferida">Cor preferida para o site <span class="required">*</span></label>
+          <div class="color-picker" id="colorPicker">
+            <label class="color-option" style="--color: #c4ff00">
+              <input type="radio" name="cor" value="#c4ff00" required>
+              <span class="color-dot" style="background: #c4ff00"></span>
+              <span class="color-name">Verde Limão</span>
+            </label>
+            <label class="color-option" style="--color: #ff5722">
+              <input type="radio" name="cor" value="#ff5722">
+              <span class="color-dot" style="background: #ff5722"></span>
+              <span class="color-name">Laranja</span>
+            </label>
+            <label class="color-option" style="--color: #ff1493">
+              <input type="radio" name="cor" value="#ff1493">
+              <span class="color-dot" style="background: #ff1493"></span>
+              <span class="color-name">Rosa Pink</span>
+            </label>
+            <label class="color-option" style="--color: #00d9ff">
+              <input type="radio" name="cor" value="#00d9ff">
+              <span class="color-dot" style="background: #00d9ff"></span>
+              <span class="color-name">Azul Ciano</span>
+            </label>
+            <label class="color-option" style="--color: #00ff88">
+              <input type="radio" name="cor" value="#00ff88">
+              <span class="color-dot" style="background: #00ff88"></span>
+              <span class="color-name">Verde Neon</span>
+            </label>
+            <label class="color-option" style="--color: #ffd700">
+              <input type="radio" name="cor" value="#ffd700">
+              <span class="color-dot" style="background: #ffd700"></span>
+              <span class="color-name">Amarelo</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="estiloPreferido">Estilo visual preferido</label>
+          <div class="radio-group">
+            <label class="radio-card">
+              <input type="radio" name="estilo" value="moderno">
+              <span>🟢 Moderno (estilo fitness tech)</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="estilo" value="elegante">
+              <span>💎 Elegante (estilo editorial/glossy)</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="estilo" value="agressivo">
+              <span>🔥 Agressivo (estilo forte/impactante)</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="estilo" value="clean">
+              <span>⚪ Clean/Minimalista (cores neutras)</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section" data-section="6">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <h2 class="section-title">Depoimentos (opcional)</h2>
+          <p class="section-desc">Prova social dos seus alunos</p>
+        </div>
+
+        <div class="form-group">
+          <label>Você tem depoimentos de alunos? <span class="required">*</span></label>
+          <div class="radio-group">
+            <label class="radio-card">
+              <input type="radio" name="temDepoimentos" value="sim-escritos" required>
+              <span>Sim, tenho por escrito (print de WhatsApp, mensagem, e-mail)</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="temDepoimentos" value="sim-video">
+              <span>Sim, tenho em vídeo</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="temDepoimentos" value="antes-depois">
+              <span>Tenho fotos de antes/depois</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="temDepoimentos" value="nao">
+              <span>Não tenho no momento</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group" id="depoimentosField" style="display:none;">
+          <label for="linkDepoimentos">Cole os depoimentos ou link para os mesmos</label>
+          <textarea id="linkDepoimentos" name="linkDepoimentos" rows="5" placeholder="Cole os textos aqui, ou coloque o link do Google Drive com as fotos/vídeos.&#10;&#10;Exemplo:&#10;'Em 4 meses perdi 12kg e ganhei muita disposição. O Rafael montou um treino que encaixou perfeitamente na minha rotina.' - Mariana, 32 anos"></textarea>
+        </div>
+      </section>
+
+      <section class="form-section" data-section="7">
+        <div class="section-header">
+          <span class="section-number">07</span>
+          <h2 class="section-title">Extras e preferências</h2>
+          <p class="section-desc">Detalhes finais</p>
+        </div>
+
+        <div class="form-group">
+          <label for="referencias">Sites que você gosta (referências)</label>
+          <textarea id="referencias" name="referencias" rows="3" placeholder="Cole aqui links de sites de outros personais ou perfis que você admira o visual.&#10;&#10;Ex: 'Gosto do estilo do site do @personalfamoso, mas quero mais moderno'"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="observacoes">Observações finais (opcional)</label>
+          <textarea id="observacoes" name="observacoes" rows="4" placeholder="Qualquer coisa que queira me contar, dúvidas, sugestões, etc."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Como prefere ser contatado? <span class="required">*</span></label>
+          <div class="radio-group">
+            <label class="radio-card">
+              <input type="radio" name="contatoPreferido" value="whatsapp" required>
+              <span>📱 WhatsApp</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="contatoPreferido" value="email">
+              <span>📧 E-mail</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="contatoPreferido" value="ligacao">
+              <span>📞 Ligação</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <div class="form-actions">
+        <button type="button" class="btn-save" id="saveBtn">
+          💾 Salvar e continuar depois
+        </button>
+        <button type="submit" class="btn-submit">
+          ✅ Enviar briefing
+        </button>
+      </div>
+
+      <p class="form-footer-note">
+        🔒 Seus dados estão protegidos e serão usados apenas para criar seu site.
+        Após o envio, entro em contato em até <strong>24 horas</strong>.
+      </p>
+
+    </form>
+  </div>
+</main>
+
+<div class="success-screen" id="successScreen">
+  <div class="success-content">
+    <div class="success-icon">🎉</div>
+    <h2>Briefing enviado com sucesso!</h2>
+    <p>Recebi todas as suas informações. Vou analisar tudo e te chamar no WhatsApp em até <strong>24 horas</strong> para alinhar os detalhes.</p>
+    <p class="success-tip">Enquanto isso, segue nossas redes pra acompanhar o processo:</p>
+    <a href="https://wa.me/5581999944106" class="btn-primary success-btn">💬 Falar comigo agora</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
