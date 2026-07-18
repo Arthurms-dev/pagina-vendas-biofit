@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Briefing BioFit — Vamos começar seu site!</title>
+<title>Briefing — Vamos começar seu site!</title>
 <meta name="description" content="Preencha este formulário para iniciarmos a criação do seu site.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +17,6 @@
 
 <header class="briefing-header">
   <div class="container">
-    <a href="https://pagina-vendas-biofit.vercel.app/" class="logo-link">
-      <img src="https://1cf4wagwhgnexlne.private.blob.vercel-storage.com/logo-biofit.png?vercel-blob-delegation=eyJzdG9yZUlkIjoic3RvcmVfMUNmNHdBR3doZ25FWExuZSIsIm93bmVySWQiOiJ0ZWFtX2dJOGxMYThZbVVHdjB0MU0zSUxRZTc3RSIsInBhdGhuYW1lIjoiKiIsIm9wZXJhdGlvbnMiOlsiZ2V0IiwiaGVhZCJdLCJ2YWxpZFVudGlsIjoxNzgzNzM4MTYwNTY0LCJpYXQiOjE3ODM2OTQ5NTg1Mzd9.db93kaZrhknixJlN4LYAeJ6kVsjaSkeNXkKTpyW_2aI&vercel-blob-signature=fDj4rBUE70XhXq9DBvGHZ6z_gp3wET1IlzVHbxmMXCc" alt="BioFit" class="logo-img">
-    </a>
     <div class="progress-indicator">
       <span class="progress-text"><span id="progressPercent">0%</span> concluído</span>
       <div class="progress-bar">
@@ -34,12 +31,12 @@
     <div class="intro-card">
       <h1 class="briefing-title">VAMOS COMEÇAR SEU <span>PROJETO</span></h1>
       <p class="briefing-subtitle">
-        Preencha as informações abaixo para eu criar seu site. 
+        Preencha as informações abaixo para a criação do seu site. 
         Leva em média <strong>10-15 minutos</strong>. 
         Pode salvar e voltar depois, se precisar.
       </p>
       <div class="intro-tips">
-        <div class="tip">💡 Tenha suas fotos em mãos</div>
+        <div class="tip">💡 Tenha suas imagens em mãos</div>
         <div class="tip">📱 Use pelo celular se preferir</div>
         <div class="tip">🔒 Seus dados estão seguros comigo</div>
       </div>
@@ -66,18 +63,12 @@
         </div>
 
         <div class="form-group">
-          <label for="cref">CREF (Registro profissional) <span class="required">*</span></label>
-          <input type="text" id="cref" name="cref" required placeholder="Ex: 123456-G/SP">
-          <small>Se ainda não tem, escreva "Em processo"</small>
-        </div>
-
-        <div class="form-group">
           <label for="cidade">Cidade e estado onde atende <span class="required">*</span></label>
-          <input type="text" id="cidade" name="cidade" required placeholder="Ex: São Paulo - SP">
+          <input type="text" id="cidade" name="cidade" required placeholder="Ex: Recife - PE">
         </div>
 
         <div class="form-group">
-          <label for="tempoAtuacao">Há quanto tempo atua como personal? <span class="required">*</span></label>
+          <label for="tempoAtuacao">Há quanto tempo atua na área? <span class="required">*</span></label>
           <select id="tempoAtuacao" name="tempoAtuacao" required>
             <option value="">Selecione...</option>
             <option value="menos-1">Menos de 1 ano</option>
@@ -158,7 +149,7 @@
         </div>
 
         <div class="form-group">
-          <label for="publicoAlvo">Quem é seu aluno ideal? <span class="required">*</span></label>
+          <label for="publicoAlvo">Quem é seu cliente ideal? <span class="required">*</span></label>
           <textarea id="publicoAlvo" name="publicoAlvo" required rows="3" placeholder="Ex: Mulheres de 25-40 anos que querem emagrecer de forma saudável e ter mais disposição"></textarea>
         </div>
       </section>
@@ -167,7 +158,7 @@
         <div class="section-header">
           <span class="section-number">03</span>
           <h2 class="section-title">Seus contatos</h2>
-          <p class="section-desc">Como os alunos vão te encontrar</p>
+          <p class="section-desc">Como os clientes vão te encontrar</p>
         </div>
 
         <div class="form-group">
@@ -197,7 +188,7 @@
         </div>
 
         <div class="form-group">
-          <label for="localizacao">Academia / Local de atendimento</label>
+          <label for="localizacao">Local de atendimento</label>
           <input type="text" id="localizacao" name="localizacao" placeholder="Ex: Academia Forma Fit - Vila Mariana">
         </div>
       </section>
@@ -315,6 +306,11 @@
               <span class="color-dot" style="background: #ffd700"></span>
               <span class="color-name">Amarelo</span>
             </label>
+             <label class="color-option" style="--color: #ffd700">
+              <input type="radio" name="cor" value="#ffd700">
+              <span class="color-dot" style="background: #ffd700"></span>
+              <span class="color-name">Caso possua outra cor em mente</span>
+            </label>
           </div>
         </div>
 
@@ -323,19 +319,19 @@
           <div class="radio-group">
             <label class="radio-card">
               <input type="radio" name="estilo" value="moderno">
-              <span>🟢 Moderno (estilo fitness tech)</span>
+              <span>🟢 Moderno</span>
             </label>
             <label class="radio-card">
               <input type="radio" name="estilo" value="elegante">
-              <span>💎 Elegante (estilo editorial/glossy)</span>
+              <span>💎 Elegante</span>
             </label>
             <label class="radio-card">
               <input type="radio" name="estilo" value="agressivo">
-              <span>🔥 Agressivo (estilo forte/impactante)</span>
+              <span>🔥 Agressivo</span>
             </label>
             <label class="radio-card">
               <input type="radio" name="estilo" value="clean">
-              <span>⚪ Clean/Minimalista (cores neutras)</span>
+              <span>⚪ Clean/Minimalista</span>
             </label>
           </div>
         </div>
@@ -345,7 +341,7 @@
         <div class="section-header">
           <span class="section-number">06</span>
           <h2 class="section-title">Depoimentos (opcional)</h2>
-          <p class="section-desc">Prova social dos seus alunos</p>
+          <p class="section-desc">Prova social dos seus clientes</p>
         </div>
 
         <div class="form-group">
